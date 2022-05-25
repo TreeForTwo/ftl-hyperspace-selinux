@@ -1,0 +1,12 @@
+
+module FTLhyperspace 1.0;
+
+require {
+	type unconfined_t;
+	class process execheap;
+}
+
+#============= unconfined_t ==============
+
+#!!!! This avc can be allowed using the boolean 'selinuxuser_execheap'
+allow unconfined_t self:process execheap;
